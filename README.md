@@ -1,6 +1,6 @@
 # test_cmake
 
-```asm
+```bash
 cd Desktop/
 git clone https://github.com/testingforforrwhat/test_cmake.git
 ls -l
