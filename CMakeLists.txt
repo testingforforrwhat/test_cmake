@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.0)
 project(test_cmake)
 
-add_executable(test_cmake src/test_alsa.c)
+add_executable(test_cmake test_alsa.c)
 
 #undefined reference to `snd_pcm_open'
 #/usr/bin/ld: test_alsa.c:(.text+0x8c): undefined reference to `snd_strerror'
