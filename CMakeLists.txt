@@ -13,5 +13,5 @@ add_executable(test_cmake test_alsa.c)
 #target_link_libraries(your_executable_name asound)
 
 #target_link_libraries(${PROJECT_NAME} asound)
-find_package(asound)
+find_package(ALSA asound)
 
