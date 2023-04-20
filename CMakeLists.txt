@@ -1,7 +1,8 @@
 cmake_minimum_required(VERSION 3.0)
 project(test_cmake)
 
-add_executable(test_cmake test_alsa.c)
+#add_executable(test_cmake test_alsa.c)  #<test_cmake> 是生成的./可执行文件的名称, 可以随机设定
+add_executable(${PROJECT_NAME} test_alsa.c)  #一般设置为project名称
 
 #undefined reference to `snd_pcm_open'
 #/usr/bin/ld: test_alsa.c:(.text+0x8c): undefined reference to `snd_strerror'
