@@ -5,6 +5,7 @@
 	 采样位数：	16bit、LE格式
 	 采样频率：	44100Hz
 */
+//asound 是 ALSA（Advanced Linux Sound Architecture）的库，提供了访问声卡硬件的接口
 #include <stdio.h>
 #include <stdlib.h>
 #include <alsa/asoundlib.h>
