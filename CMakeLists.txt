@@ -12,7 +12,7 @@ add_executable(test_cmake test_alsa.c)
 # if cmake
 #target_link_libraries(your_executable_name asound)
 
-find_package(ALSA REQUIRED)
+find_package(alsa REQUIRED)
 target_link_libraries(${PROJECT_NAME} asound)  # 将 ${PROJECT_NAME} 目标链接到 asound库
 
 
