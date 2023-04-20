@@ -16,8 +16,8 @@ add_executable(test_cmake test_alsa.c)
 #target_link_libraries(${PROJECT_NAME} asound)  # 将 ${PROJECT_NAME} 目标链接到 asound库
 
 
-find_package(ALSA REQUIRED)
-target_link_libraries(${PROJECT_NAME} ${ALSA_LIBRARIES})
+find_package(ALSA REQUIRED)  #在CMake中使用find_package(alsa)是试图查找安装在系统上的alsa库，包括头文件和链接库。如果找到了，则会设置变量，例如 ALSA_FOUND， ALSA_INCLUDE_DIRS 和 ALSA_LIBRARIES
+target_link_libraries(${PROJECT_NAME} ${ALSA_LIBRARIES})  ## == gcc -o test_alsa test_alsa.c -lasound
 
 #target_link_libraries 和 find_package 在 CMake 中有不同的作用，不能相互替代使用。
 #在使用 CMake 进行项目构建时，通常需要先通过 find_package 找到外部依赖库，然后再通过 target_link_libraries 将目标文件与库文件进行链接。
